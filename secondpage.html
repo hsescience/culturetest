@@ -1,0 +1,27 @@
+﻿<html>
+	<head>
+		<meta charset = "utf-8" />
+		<title>Вопрос №2</title> <!--Сюды номер вопроса -->
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+	</head>
+	<body>
+		<div class = "answerblock2">
+			<div class = "bigtext2"><h1>Итак, перейдем к вопросу №1</h1></div>
+			<form name="formselect" action="javascript:document.location.href = 'finalpage.html'" method="POST"> <!--СЮДЫ ПХП -->
+				<div class = "bigtext2"><h2>Кто ты?</h2></div>
+
+				<input type="radio" name="group1" id = "radiobutton1" class = "niceRadio" value="value1" checked = "checked"> <label for = "radiobutton1">Абитуриент РФ</label>
+				<div style = "clear: both;"></div>		
+				<input type="radio" name="group1" id = "radiobutton2" class = "niceRadio" value="value2"> <label for = "radiobutton2">Абитуриент СНГ или Балтии</label>
+				<div style = "clear: both;"></div>
+				<input type="radio" name="group1" id = "radiobutton3" class = "niceRadio" value="value3"> <label for = "radiobutton3">Студент НИУ-ВШЭ</label> 
+				<div style = "clear: both;"></div> 
+				<!--В пхп передастся значение value!!!! -->
+				<!--radio это жопа, готовся к жаркому сексу -->
+				<!-- Радиобаттоны создаются динамически на сервере, это заготовка, label for не забудь и id к ним-->
+				<div class = "button" id = "button" onclick = "javascript:document.formselect.submit()">Следующий</div>		
+
+			</form>
+		</div>
+	</body>
+</html>
